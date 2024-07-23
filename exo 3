@@ -1,0 +1,15 @@
+let taille = 8;
+let grille = '';
+
+for (let ligne = 0; ligne < taille; ligne++) {
+    for (let colonne = 0; colonne < taille; colonne++) {
+        if ((ligne + colonne) % 2 === 0) {
+            grille += '#';
+        } else {
+            grille += ' ';
+        }
+    }
+    grille += '\n';
+}
+
+console.log(grille);
